@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ro'yhatdan o'tish formasi</title>
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="main-content">
+    <div class="container">
+
+      <div class="profile-settings">
+        <form action="https://echo.htmlacademy.ru" method="post" class="profile-settings-form">
+          <header class="profile-settings-header">
+            <h1 class="profile-settings-title">Account settings</h1>
+            <a href="#" class="profile-settings-close-link">
+              <img src="kopaytirish.svg" alt="close" width="24" height="24">
+            </a>
+          </header>
+
+          <div class="profile-settings-form-body">
+            <img class="profile-settings-avatar" src="avatar.jpg" alt="Profile img" width="60" height="60">
+            <div class="profile-settings-form-group">
+              <label for="settings-username-input" class="profile-settings-form-label">Username</label>
+              <input type="text" name="username" id="settings-username-input" placeholder="Entor your username" required class="profile-settings-form-field">
+            </div>
+            <div class="profile-settings-form-row">
+              <div class="profile-settings-form-group">
+                <label for="settings-frist-name-input" class="profile-settings-form-label">Frist name</label>
+                <input type="text" name="frist_name" id="settings-frist-name-input" placeholder="Entor frist name" required class="profile-settings-form-field">
+              </div>
+              <div class="profile-settings-form-group">
+                <label for="settings-last-name-input" class="profile-settings-form-label">Last name</label>
+                <input type="text" name="last_name" id="settings-last-name-input" placeholder="Entor your last name" required class="profile-settings-form-field">
+              </div>
+            </div>
+            <div class="profile-settings-form-group">
+              <label for="settings-email-input" class="profile-settings-form-label">Email</label>
+              <input type="email" name="email" id="settings-email-input" placeholder="Entor your email" required class="profile-settings-form-field">
+            </div>
+            <div class="profile-settings-form-group">
+              <label for="settings-bio-textarea" class="profile-settings-form-label">Bio</label>
+              <textarea class="profile-settings-form-field profile-settings-form-field-textarea" name="bio" required placeholder="Tell us about yourself" id="settings-bio-textarea"></textarea>
+            </div>
+          </div>
+
+          <footer class="profile-settings-form-actions">
+            <button class="profile-settings-form-action" type="submit">Cancel</button>
+            <button class="profile-settings-form-action" type="submit">Save</button>
+          </footer>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
